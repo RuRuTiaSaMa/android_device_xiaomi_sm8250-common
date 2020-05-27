@@ -159,7 +159,12 @@ public class PopupCameraService extends Service implements Handler.Callback {
         mFreeFallSensor = SensorsUtils.getSensor(mSensorManager, "xiaomi.sensor.free_fall");
         mProximitySensor = new ProximitySensor(this);
 
-        mPopupCameraPreferences = new PopupCameraPreferences(this);
+        try{
+            mPopupCameraPreferences = new PopupCameraPreferences(this);
+        }
+        catch(Exception ex){
+            //wait for boot to complete
+        }
 
         mSoundPool = new SoundPool.Builder()
                 .setMaxStreams(1)
