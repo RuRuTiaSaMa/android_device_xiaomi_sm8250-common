@@ -58,4 +58,7 @@
         <item>268</item>
         <item>267</item>
     </integer-array>
+
+     <!-- Whether to show Battery Health in Settings Option -->
+     <bool name="config_supportBatteryHealth">true</bool>
 </resources>
