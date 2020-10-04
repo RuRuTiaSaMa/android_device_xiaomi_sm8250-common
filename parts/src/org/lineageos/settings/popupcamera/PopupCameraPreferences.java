@@ -29,7 +29,7 @@ public class PopupCameraPreferences {
     private static final String LED_COLOR_KEY = "popup_led_color";
     private static final String LED_COLOR_DEFAULT_VALUE = "7";
     private static final String SOUND_EFFECT_KEY = "popup_sound_effect";
-    private static final String SOUND_EFFECT_DEFAULT_VALUE = "0";
+    private static final String SOUND_EFFECT_DEFAULT_VALUE = "-1";
     private SharedPreferences mSharedPrefs;
 
     public PopupCameraPreferences(Context context) {
