@@ -164,7 +164,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
                         .setFlags(AudioAttributes.FLAG_AUDIBILITY_ENFORCED)
                         .build())
                 .build();
-        String[] soundNames = getResources().getStringArray(R.array.popupcamera_effects_names);
+        String[] soundNames = getResources().getStringArray(R.array.popupcamera_sounds_names);
         mSounds = new int[soundNames.length];
         for (int i = 0; i < soundNames.length; i++) {
             mSounds[i] = mSoundPool.load(Constants.POPUP_SOUND_PATH + soundNames[i], 1);

@@ -16,7 +16,7 @@
 -->
 <resources>
     <!-- Popup camera effect names -->
-    <string-array name="popupcamera_effects_names" translatable="false">
+    <string-array name="popupcamera_sounds_names" translatable="false">
         <item>popup_muqin_up.ogg</item>
         <item>popup_muqin_down.ogg</item>
         <item>popup_yingyan_up.ogg</item>
@@ -31,17 +31,17 @@
         <item>popup_cangmen_down.ogg</item>
     </string-array>
 
-    <string-array name="popupcamera_effects_entries">
+    <string-array name="popupcamera_sounds_entries">
         <item>@string/action_none</item>
-        <item>@string/popup_title_muqin</item>
-        <item>@string/popup_title_yingyan</item>
-        <item>@string/popup_title_mofa</item>
-        <item>@string/popup_title_jijia</item>
-        <item>@string/popup_title_chilun</item>
-        <item>@string/popup_title_cangmen</item>
+        <item>@string/popup_sound_muqin</item>
+        <item>@string/popup_sound_yingyan</item>
+        <item>@string/popup_sound_mofa</item>
+        <item>@string/popup_sound_jijia</item>
+        <item>@string/popup_sound_chilun</item>
+        <item>@string/popup_sound_cangmen</item>
     </string-array>
 
-    <string-array name="popupcamera_effects_values">
+    <string-array name="popupcamera_sounds_values">
         <item>-1</item>
         <item>0</item>
         <item>2</item>
