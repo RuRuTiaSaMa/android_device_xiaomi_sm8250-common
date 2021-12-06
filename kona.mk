@@ -106,6 +106,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 endif
 
+# Adaptive charging
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/adaptivecharging.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/adaptivecharging.xml
+
 # ART
 # Optimize for speed dexopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
