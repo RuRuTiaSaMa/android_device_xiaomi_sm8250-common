@@ -101,6 +101,10 @@ endif
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
+# Adaptive charging
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/adaptivecharging.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/adaptivecharging.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
