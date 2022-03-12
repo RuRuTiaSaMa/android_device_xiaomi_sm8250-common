@@ -212,11 +212,6 @@
                              channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK,AUDIO_CHANNEL_INDEX_MASK_3"/>
                 </mixPort>
                 <mixPort name="hifi_input" role="sink" />
-                <mixPort name="quad mic" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                        samplingRates="48000"
-                        channelMasks="AUDIO_CHANNEL_INDEX_MASK_4"/>
-                </mixPort>
             </mixPorts>
 
             <devicePorts>
