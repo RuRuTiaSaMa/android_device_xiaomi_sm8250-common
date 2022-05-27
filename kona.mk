@@ -403,6 +403,12 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
     vendor.lineage.livedisplay@2.1-service.xiaomi_kona
 
+# Matlog
+ifeq ($(TAEGET_WITH_OMNIROM_MATLOG),true)
+PRODUCT_PACKAGES += \
+     MatLog
+endif
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
