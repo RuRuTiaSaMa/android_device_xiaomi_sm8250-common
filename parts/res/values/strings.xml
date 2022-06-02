@@ -19,9 +19,9 @@
     <string name="ambient_enable">Use Ambient display</string>
 
     <!-- Popup camera settings -->
-    <string name="popup_title">Front camera settings</string>
+    <string name="popup_title">Front camera effects</string>
     <string name="popup_led_title">Camera LED</string>
-    <string name="popup_led_summary">Show LED light when the front camera appears and retracts</string>
+    <string name="popup_led_summary">Enable LED light while the front camera appears and retracts</string>
     <string name="popup_led_color_title">LED color</string>
     <string name="popup_led_color_blue">Blue</string>
     <string name="popup_led_color_green">Green</string>
@@ -30,7 +30,7 @@
     <string name="popup_led_color_purple">Purple</string>
     <string name="popup_led_color_yellow">Yellow</string>
     <string name="popup_led_color_white">White</string>
-    <string name="popup_sound_title">Front camera sound effects</string>
+    <string name="popup_sound_title">Sound effects</string>
     <string name="popup_sound_muqin">Xylophone</string>
     <string name="popup_sound_yingyan">Condor</string>
     <string name="popup_sound_mofa">Magic</string>
@@ -40,15 +40,12 @@
 
     <!-- Popup camera strings -->
     <string name="popup_camera_tip">Warning</string>
-    <string name="popup_camera_takeback_failed_times_calibrate">Couldn\'t close front camera multiple times. Try calibrating the camera.</string>
-    <string name="popup_camera_popup_failed_times_calibrate">Couldn\'t open front camera multiple times. Try calibrating the camera.</string>
+    <string name="popup_camera_takeback_failed_calibrate">Couldn\'t close front camera. Try calibrating the motor.</string>
+    <string name="popup_camera_popup_failed_calibrate">Couldn\'t open front camera. Try calibrating the motor.</string>
     <string name="popup_camera_calibrate_running">Front camera cannot be used during calibration.</string>
     <string name="popup_camera_calibrate_now">Calibrate</string>
     <string name="popup_camera_calibrate_failed">Couldn\'t calibrate</string>
     <string name="popup_camera_calibrate_success">Calibrated successfully. You can open the front camera now.</string>
-    <string name="stop_operate_camera_frequently">You\'re opening the front camera too frequently.</string>
-    <string name="takeback_camera_front_failed">Couldn\'t close front camera. Try again.</string>
-    <string name="popup_camera_front_failed">Couldn\'t open front camera. Try again.</string>
 
     <!-- Thermal Profiles -->
     <string name="thermal_title">Thermal Profiles</string>
