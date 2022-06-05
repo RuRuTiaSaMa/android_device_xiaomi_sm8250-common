@@ -372,6 +372,13 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
     vendor.lineage.livedisplay@2.1-service.xiaomi_kona
 
+# MatlogX
+TAEGET_WITH_MATLOGX := true
+ifeq ($(TAEGET_WITH_MATLOGX),true)
+PRODUCT_PACKAGES += \
+     MatlogX
+endif
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
