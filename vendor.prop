@@ -163,10 +163,6 @@ persist.vendor.camera.logInfoMask=false
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8250
 
-# Crypto
-ro.crypto.allow_encrypt_override=true
-ro.crypto.volume.filenames_mode=aes-256-cts
-
 # Display
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
