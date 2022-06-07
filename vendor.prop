@@ -149,10 +149,6 @@ vendor.qcom.bluetooth.soc=hastings
 ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
 
-# Crypto
-ro.crypto.allow_encrypt_override=true
-ro.crypto.volume.filenames_mode=aes-256-cts
-
 # Display
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
