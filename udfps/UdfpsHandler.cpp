@@ -11,6 +11,7 @@
 #include <android-base/logging.h>
 #include <fcntl.h>
 #include <poll.h>
+#include <fstream>
 #include <thread>
 #include <unistd.h>
 
@@ -18,10 +19,23 @@
 #define PARAM_NIT_FOD 1
 #define PARAM_NIT_NONE 0
 
+#define DISPPARAM_PATH "/sys/class/drm/card0/card0-DSI-1/disp_param"
+#define DISPPARAM_HBM_FOD_ON "0x20000"
+#define DISPPARAM_HBM_FOD_OFF "0xE0000"
+
 static const char* kFodUiPaths[] = {
         "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui",
         "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui",
 };
+
+/*
+ * Write value to path and close file.
+ */
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
+    file << value;
+}
 
 static bool readBool(int fd) {
     char c;
@@ -81,11 +95,11 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        // nothing
+        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     }
 
     void onFingerUp() {
-        // nothing
+        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     }
 
     void onAcquired(int32_t /*result*/, int32_t /*vendorCode*/) {
