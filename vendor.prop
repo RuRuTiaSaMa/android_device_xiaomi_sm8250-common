@@ -249,6 +249,7 @@ sys.fflag.override.settings_enable_monitor_phantom_procs=false
 persist.radio.multisim.config=dsds
 persist.rcs.supported=1
 persist.vendor.data.iwlan.enable=true
+persist.vendor.radio.5g_mode_pref=1
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.arfcn_test_mode=3
 persist.vendor.radio.bar_fake_gcell=1
@@ -266,7 +267,6 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 persist.vendor.radio.uicc_se_enabled=true
 ro.com.android.dataroaming=false
-ro.telephony.default_network=22,22
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
