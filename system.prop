@@ -128,6 +128,7 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.radio.snapshot_enabled=0
 persist.radio.snapshot_timer=0
 persist.rcs.otp_sms_port=0
+ro.telephony.default_network=33,22
 
 # Netmgr
 persist.vendor.data.mode=concurrent
