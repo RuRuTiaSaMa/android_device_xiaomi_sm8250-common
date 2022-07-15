@@ -11,3 +11,6 @@ vendor.xiaomi.hardware.motor::IMotor                                u:object_r:h
 
 # MiSys
 vendor.xiaomi.hardware.misys::IMiSys                                                     u:object_r:hal_misys_hwservice:s0
+
+# Sensors
+vendor.xiaomi.hardware.citsensorservice::ICitSensorService                    u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
