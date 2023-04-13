@@ -24,7 +24,6 @@ import android.content.IntentFilter;
 import android.util.Log;
 
 import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.popupcamera.PopupCameraUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
@@ -42,7 +41,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         } catch (Exception e) {
             Log.d(TAG, "Dirac is not present in system");
         }
-        DozeUtils.checkDozeService(context);
         PopupCameraUtils.checkPopupCameraService(context);
         ThermalUtils.startService(context);
     }
