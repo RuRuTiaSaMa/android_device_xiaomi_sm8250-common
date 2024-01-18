@@ -71,6 +71,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "android.hardware.vibrator-V1-ndk_platform.so" "android.hardware.vibrator-V1-ndk.so" "${2}"
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service | vendor/lib*/libstagefrightdolby.so | vendor/lib*/libstagefright_soft_*.so | vendor/lib*/libdlbdsservice.so)
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33-dolby.so" "${2}"
+            ;;
     esac
 }
 
